@@ -1,0 +1,22 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color:red;
+}
+.page form {
+
+    width: 30%;
+    height: 30vh;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color:aqua;
+}

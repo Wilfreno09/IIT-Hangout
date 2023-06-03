@@ -1,0 +1,165 @@
+
+.login__box{
+  position: absolute;
+  right: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 32%;
+  border: 0.2rem solid rgba(255, 255, 255, 0.56);
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(1.5rem);
+  
+}
+
+.login__form{
+
+  display: flex;
+  flex-direction:column;
+}
+
+.auth__input{
+  color:#fff;
+}
+
+
+
+/* .section {src/styles/Login.module.css
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+
+  background: url("../../public/bckg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form__box {
+  position: relative;
+  width: 40rem;
+  height: 45rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.56);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: url("../../public/logo.png")no-repeat;
+  background-position:top;
+  backdrop-filter: blur(1.5rem);
+  background-size: 35rem;
+}
+
+.h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.input__box {
+  position: relative;
+    margin: 3rem 0;
+    width: 31rem;
+  border-bottom: 0.2rem solid #fff;
+}
+
+.input__box label {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -0.5rem;
+}
+
+.input__box input {
+  width: 100%;
+  height: 5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 3.5rem 0 0.5rem;
+  color: #fff;
+
+  
+}
+
+.input__box p {
+  position: absolute;
+  transform: translateY(20%);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgb(192, 37, 37);
+}
+
+.remember__forget {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.remember input {
+  margin-right: 0.3rem;
+}
+
+.remember__forget a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+}
+.remember__forget a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  width: 100%;
+  height: 4rem;
+  border-radius: 4rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.register {
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  margin: 1rem 2.5rem;
+}
+
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+} */

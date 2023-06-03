@@ -1,0 +1,288 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+
+  background-color: coral;
+}
+
+.register__box {
+  position: absolute;
+  right: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 32%;
+  border: 0.2rem solid rgba(255, 255, 255, 0.56);
+  border-radius: 2rem;
+  backdrop-filter: blur(1.5rem);
+}
+
+.register__box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.register__box h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+.get__name,
+.email,
+.birth__date,
+.get__gender,
+.password {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.email,
+.birth__date,
+.get__gender,
+.password {
+  position: relative;
+}
+
+.get__name input,
+.email input,
+.password input,
+.get__gender input,
+.birth__date select {
+  height: 5rem;
+  background: transparent;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 0.2rem solid #fff;
+}
+
+.get__name input,
+.email input,
+.password input {
+  width: 100%;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+
+.get__name input {
+  width: 100%;
+}
+
+.get__name{
+  display: flex;
+  justify-content: space-between;
+}
+.first__name,
+.last__name {
+  width: 45%;
+  position: relative;
+
+}
+
+
+.get__name label,
+.email label,
+.birth__date label,
+.get__gender label,
+.password label {
+  position: absolute;
+  transform: translateY(-50%);
+  left: .7rem;
+  top: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+
+.date__select,
+.gender__option {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.get__gender{
+  justify-content: flex-end;
+}
+.gender__option{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gender__option h3{
+
+  margin: .5rem;
+  font-size:1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+.gender__option div {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.first__name input:focus ~ label,
+.first__name input:valid ~ label{
+
+  top: -.3em;
+}
+
+/* .section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+
+  background-color: coral;
+  
+  background: url("../../public/bckg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.form__box {
+  position: relative;
+  padding: 1rem;
+  width: 40rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.56);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  backdrop-filter: blur(1.5rem);
+}
+
+.h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.input__box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 3rem 0;
+  width: 32rem;
+}
+
+.input__box label {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input__box p {
+  position: absolute;
+  transform: translateY(20%);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgb(192, 37, 37);
+}
+
+.input__box input:not([type="date"]) {
+  width: 100%;
+  height: 5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 0.2rem solid #fff;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 0 3.5rem 0 0.5rem;
+  color: #fff;
+}
+
+.name {
+  display: flex;
+  width: 50%;
+  position: relative;
+  justify-content: space-around;
+}
+
+.name input:not([type="date"]) {
+  width: 90%;
+}
+
+.input__box input[type="text"]:focus ~ label,
+.input__box input[type="text"]:valid ~ label,
+.input__box select:focus ~ label,
+.input__box select:valid ~ label,
+.input__box input[type="password"]:focus ~ label,
+.input__box input[type="password"]:valid ~ label {
+  top: -0.3rem;
+}
+
+.input__box input[type="text"]:not(:focus):not(:valid) ~ label,
+.input__box select:not(:focus):not(:valid) ~ label,
+.input__box input[type="password"]:not(:focus):not(:valid) ~ label {
+  top: 50%;
+}
+
+.input__box select {
+  display: flex;
+  width: 25%;
+  height: 5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 0.2rem solid #fff;
+  outline: none;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.button {
+  width: 100%;
+  height: 4rem;
+  border-radius: 4rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.register {
+  font-size: 1.1rem;
+  color: #fff;
+  text-align: center;
+  margin: 1rem 2.5rem;
+}
+
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+} */
